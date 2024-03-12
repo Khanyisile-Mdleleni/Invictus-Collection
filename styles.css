@@ -56,3 +56,27 @@ nav ul li a {
     height: auto;
 }
 
+/*----------------------- Landing Page -------------------*/
+
+.home-content-container {
+  position: absolute;
+  top: 150px;
+  left: -3%;
+}
+
+.home-content {
+  padding: 0 15rem; 
+}
+
+.home-title {
+  font-size: 5rem;
+}
+
+.home-description {
+  font-size: 2rem;
+  padding: 0 1rem;
+}
+
+.home-button {
+  padding-left: 1rem;
+}
