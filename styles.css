@@ -17,9 +17,6 @@ a {
 
 /* -------------------------------------- Navbar ------------------------------------*/
 
-/* styles.css */
-
-/* Navbar styles */
 nav {
     background-color: lightgrey;
     padding: 10px 20px;
@@ -59,26 +56,3 @@ nav ul li a {
     height: auto;
 }
 
-/* Dropdown styles */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: lightgrey;
-    min-width: 160px;
-    z-index: 1;
-}
-
-.dropdown-content ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.dropdown-content ul li {
-    padding: 10px;
-}
-
-/* Show dropdown content when hovering over dropdown */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
