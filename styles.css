@@ -80,3 +80,14 @@ nav ul li a {
 .home-button {
     padding-left: 1rem;
 }
+
+/* Icons styles */
+.home-icons {
+    margin-top: 25px;
+}
+
+.home-icons i {
+    font-size: 2rem;
+    margin-right: 10px;
+    color: black;
+}
