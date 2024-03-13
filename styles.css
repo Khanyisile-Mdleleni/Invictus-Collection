@@ -84,8 +84,12 @@ nav ul li a {
 }
 
 /* Icons styles */
+.icons{
+    padding-top: 50px; 
+}
 .home-icons {
-    margin-top: 25px;
+    margin-top: 55px;
+    padding-left: 55px;
 }
 
 .home-icons i {
