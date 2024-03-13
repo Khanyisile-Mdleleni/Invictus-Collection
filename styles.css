@@ -97,3 +97,16 @@ nav ul li a {
     margin-right: 10px;
     color: black;
 }
+
+/* ---------------- About Us ----------------------*/
+
+.title {
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+  
+  .subtitle {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
