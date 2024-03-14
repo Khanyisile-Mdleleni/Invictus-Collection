@@ -199,5 +199,20 @@ nav ul li a {
     }
   }
   
+/* ---------------- Services ----------------------*/
 
+.title {
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+  
+  .subtitle {
+    text-align: center;
+    margin-top: 1rem;
+  }
+ 
+.services-container {
+    margin-top: 3.5rem; 
+    
+}
   
