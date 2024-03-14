@@ -61,13 +61,12 @@ nav ul li a {
 /*----------------------- Landing Page -------------------*/
 
 .home-content-container {
-    position: absolute;
-    top: 150px;
-    left: -3%;
+    margin-top: 4rem; 
+    padding: 2rem; 
 }
 
 .home-content {
-    padding: 0 15rem;
+    padding: 0 12rem;
 }
 
 .home-title {
@@ -83,21 +82,6 @@ nav ul li a {
     padding-left: 1rem;
 }
 
-/* Icons styles */
-.icons{
-    padding-top: 50px; 
-}
-.home-icons {
-    margin-top: 55px;
-    padding-left: 55px;
-}
-
-.home-icons i {
-    font-size: 2rem;
-    margin-right: 10px;
-    color: black;
-}
-
 /* ---------------- About Us ----------------------*/
 
 .title {
@@ -109,4 +93,10 @@ nav ul li a {
     text-align: center;
     margin-top: 1rem;
   }
+ 
+.about-container {
+    margin-top: 5rem; 
+    padding: 2rem; 
+}
+
   
