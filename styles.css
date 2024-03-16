@@ -228,7 +228,28 @@ nav ul li a {
     margin-top: 2.5rem;
 }
 
+.testimonial-slide {
+    display: none;
+  }
+  
+  
+  .testimonial-content {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .rating {
+    color: gold;
+    font-size: 24px;
+  }
+ 
 
-.testimonials-container {
-    margin-top: 3.5rem;
-}
+  
+  
+
