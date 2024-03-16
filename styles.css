@@ -162,7 +162,6 @@ nav ul li a {
 
 .about-container {
     margin-top: 3.5rem;
-
 }
 
 .cards {
@@ -249,6 +248,23 @@ nav ul li a {
     font-size: 24px;
   }
  
+  /*--------------------- FAQs -------------------------*/
+  
+  @media (min-width: 576px) {
+
+    /* Tablet and larger screens */
+    .faqs{
+        padding: 0 120px 0 120px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    /* Larger screens */
+    .faqs{
+        padding: 0 140px 0 140px;
+    }
+}
 
   
   
