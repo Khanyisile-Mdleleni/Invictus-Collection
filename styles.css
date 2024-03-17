@@ -226,12 +226,12 @@ article {
   }
   
   .section {
-    width: 70%;
+    width: 100%;
     overflow: hidden;
     padding: 2% 5% 0;
     position: relative;
   }
-  
+/*   
   @keyframes move {
     0% {
       transform: translate3d(0px, 0px, 0px);
@@ -239,7 +239,8 @@ article {
     100% {
       transform: translate3d(-1250px, 0px, 0px);
     }
-  }
+  } */
+  
   .teaser {
     display: flex;
     margin: 0 0 3vw 0;
