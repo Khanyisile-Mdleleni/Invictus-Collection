@@ -232,7 +232,6 @@ article {
     position: relative;
   }
   
-  
   @keyframes move {
     0% {
       transform: translate3d(0px, 0px, 0px);
