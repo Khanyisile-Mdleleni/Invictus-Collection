@@ -231,16 +231,8 @@ article {
     padding: 2% 5% 0;
     position: relative;
   }
-  .section:before {
-    position: absolute;
-    right: 0;
-    width: 5%;
-    top: 0;
-    height: 100%;
-    background: red;
-  }
   
- 
+  
   @keyframes move {
     0% {
       transform: translate3d(0px, 0px, 0px);
@@ -268,8 +260,6 @@ article {
     object-fit: cover;
   }
   
-
-
 
 /* ---------------- Testimonials ----------------------*/
 
