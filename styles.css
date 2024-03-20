@@ -231,16 +231,7 @@ article {
     padding: 2% 5% 0;
     position: relative;
   }
-/*   
-  @keyframes move {
-    0% {
-      transform: translate3d(0px, 0px, 0px);
-    }
-    100% {
-      transform: translate3d(-1250px, 0px, 0px);
-    }
-  } */
-  
+
   .teaser {
     display: flex;
     margin: 0 0 3vw 0;
@@ -307,6 +298,15 @@ article {
     }
 }
 
+
+  /*--------------------- Contact Us -------------------------*/
+
+  .contact-items ul li{
+    list-style: none;
+    padding: 20px;
+  }
+  /* .contact button{
+  } */
   
   
 
