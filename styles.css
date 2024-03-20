@@ -217,40 +217,43 @@ nav ul li a {
 .services-container {
     padding: 0 100px 0 100px;
 }
+
 article {
     display: flex;
     height: 300px;
     position: relative;
     background: #fff;
     box-shadow: 0px 0px 50px -10px #9a7289;
-  }
-  
-  .section {
+}
+
+.section {
     width: 100%;
     overflow: hidden;
     padding: 2% 5% 0;
     position: relative;
-  }
+}
 
-  .teaser {
+.teaser {
     display: flex;
     margin: 0 0 3vw 0;
     animation: move 20s forwards linear;
-  }
-  .teaser figure {
+}
+
+.teaser figure {
     overflow: hidden;
     margin: 0;
     width: 250px;
     min-width: 250px;
     padding: 0 30px 0 0;
     position: relative;
-  }
-  .teaser img {
+}
+
+.teaser img {
     width: 220px;
     height: 180px;
     object-fit: cover;
-  }
-  
+}
+
 
 /* ---------------- Testimonials ----------------------*/
 
@@ -261,31 +264,31 @@ article {
 
 .testimonial-slide {
     display: none;
-  }
-  
-  
-  .testimonial-content {
+}
+
+
+.testimonial-content {
     text-align: center;
     padding: 20px;
-  }
-  
-  .profile-picture {
+}
+
+.profile-picture {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-  }
-  
-  .rating {
+}
+
+.rating {
     color: gold;
     font-size: 24px;
-  }
- 
-  /*--------------------- FAQs -------------------------*/
-  
-  @media (min-width: 576px) {
+}
+
+/*--------------------- FAQs -------------------------*/
+
+@media (min-width: 576px) {
 
     /* Tablet and larger screens */
-    .faqs{
+    .faqs {
         padding: 0 120px 0 120px;
     }
 }
@@ -293,20 +296,65 @@ article {
 @media (min-width: 992px) {
 
     /* Larger screens */
-    .faqs{
+    .faqs {
         padding: 0 140px 0 140px;
     }
 }
 
 
-  /*--------------------- Contact Us -------------------------*/
+/*--------------------- Contact Us -------------------------*/
 
-  .contact-items ul li{
+.contact-items ul li {
     list-style: none;
     padding: 20px;
-  }
-  /* .contact button{
-  } */
-  
-  
+}
 
+/*-------------------- Footer -----------------------------*/
+footer {
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+}
+
+#footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-content a {
+    color: black;
+    margin: 0 50px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.footer_title {
+    margin-left: auto;
+}
+
+
+@media screen and (min-width: 768px) {
+    footer {
+        padding: 30px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    footer {
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    footer {
+        padding: 15px;
+    }
+    #footer-content {
+        flex-direction: column;
+    }
+    #footer-content a {
+        margin: 10px 0;
+    }
+}
