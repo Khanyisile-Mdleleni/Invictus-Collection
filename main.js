@@ -28,5 +28,65 @@ function isValidEmail(email) {
   return emailRegex.test(email);
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  const testimonials = [
+    {
+      id: 1,
+      name: "Beven Chiwaz",
+      image: "boy.jpg", // Replace with actual file path
+      stars: 5,
+      comment:
+        "Outstanding service and creativity from Ace of Digital for my business cards. Highly recommend their expertise.",
+    },
+    {
+      id: 1,
+      name: "Beven Chiwaz",
+      image: "boy.jpg", // Replace with actual file path
+      stars: 5,
+      comment:
+        "Outstanding service and creativity from Ace of Digital for my business cards. Highly recommend their expertise.",
+    },
+    {
+      id: 1,
+      name: "Beven Chiwaz",
+      image: "boy.jpg", // Replace with actual file path
+      stars: 5,
+      comment:
+        "Outstanding service and creativity from Ace of Digital for my business cards. Highly recommend their expertise.",
+    },
+    {
+      id: 1,
+      name: "Beven Chiwaz",
+      image: "boy.jpg", // Replace with actual file path
+      stars: 5,
+      comment:
+        "Outstanding service and creativity from Ace of Digital for my business cards. Highly recommend their expertise.",
+    },
+    // Add other testimonials here
+  ];
+
+  const testimonialsContainer = document.getElementById("testimonialsContainer");
+
+  testimonials.forEach(testimonial => {
+    const testimonialElem = document.createElement("div");
+    testimonialElem.classList.add("testimonial");
+
+    testimonialElem.innerHTML = `
+      <div class="testimonial-image">
+        <img src="${testimonial.image}" alt="Client">
+      </div>
+      <div class="testimonial-details">
+        <div class="testimonial-header">
+          <h3>${testimonial.name}</h3>
+          <div class="stars">${'&#9733;'.repeat(testimonial.stars)}</div>
+        </div>
+        <p class="comment">${testimonial.comment}</p>
+      </div>
+    `;
+
+    testimonialsContainer.appendChild(testimonialElem);
+  });
+});
+
 
 
