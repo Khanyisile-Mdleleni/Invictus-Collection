@@ -32,37 +32,29 @@ document.addEventListener("DOMContentLoaded", function () {
   const testimonials = [
     {
       id: 1,
-      name: "Beven Chiwaz",
-      image: "boy.jpg", // Replace with actual file path
+      name: "Khanyisile",
+      image: "boy.jpg", 
       stars: 5,
       comment:
         "Outstanding service and creativity from Ace of Digital for my business cards. Highly recommend their expertise.",
     },
     {
       id: 1,
-      name: "Beven Chiwaz",
-      image: "boy.jpg", // Replace with actual file path
+      name: "Khanyisile",
+      image: "boy.jpg", 
       stars: 5,
       comment:
         "Outstanding service and creativity from Ace of Digital for my business cards. Highly recommend their expertise.",
     },
     {
       id: 1,
-      name: "Beven Chiwaz",
-      image: "boy.jpg", // Replace with actual file path
+      name: "Khanyisile",
+      image: "boy.jpg", 
       stars: 5,
       comment:
         "Outstanding service and creativity from Ace of Digital for my business cards. Highly recommend their expertise.",
     },
-    {
-      id: 1,
-      name: "Beven Chiwaz",
-      image: "boy.jpg", // Replace with actual file path
-      stars: 5,
-      comment:
-        "Outstanding service and creativity from Ace of Digital for my business cards. Highly recommend their expertise.",
-    },
-    // Add other testimonials here
+   
   ];
 
   const testimonialsContainer = document.getElementById("testimonialsContainer");
