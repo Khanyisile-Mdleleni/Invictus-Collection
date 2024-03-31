@@ -311,34 +311,46 @@ article {
 
 .input-group {
     margin-bottom: 20px;
-  }
-  
-  .input-group label {
+}
+
+.input-group label {
     display: block;
     margin-bottom: 5px;
     color: #333;
-  }
-  
-  .input-group input,
-  .input-group textarea {
+}
+
+.input-group input,
+.input-group textarea {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 3px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+    }
+}
+
 
 /*-------------------- Footer -----------------------------*/
 footer {

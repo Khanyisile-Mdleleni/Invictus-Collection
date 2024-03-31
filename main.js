@@ -1,33 +1,32 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+  if (name === '' || email === '' || message === '') {
+    alert('Please fill in all fields.');
+    return;
+  }
+
+  if (!isValidEmail(email)) {
+    alert('Please enter a valid email address.');
+    return;
+  }
+
+  // Form is valid, you can proceed with form submission logic here
+  const formData = new FormData(this);
+  for (const [key, value] of formData.entries()) {
+    console.log(`${key}: ${value}`);
+  }
+  this.reset(); // Reset the form after submission
+});
+
+function isValidEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
 }
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("testimonial-slide");
-  let dots = document.getElementsByClassName("dot");
-  
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-}
 
 
