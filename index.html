@@ -441,18 +441,27 @@
             <div class="col">
               <div class="contact-items">
                 <ul>
-                  <li><i class="uil uil-phone"></i> 063 109 8090</li> <br> <br>
-                  <li><i class="uil uil-envelope"></i> khanyim@gmail.com</li> <br> <br>
-                  <li><i class="uil uil-map"></i> Cape Town, 8001</li> 
+                  <li><i class="uil uil-envelope"></i> E-mail us: khanyim@gmail.com</li> <br> <br>
+                  <li><i class="uil uil-calender"></i> Available between: Open 24hrs </li> <br> <br>
+                  <li><i class="uil uil-map"></i> Company Address: Cape Town, 8001</li> 
                 </ul>
               </div>
             </div>
             <div class="col">
-              <form action="" class="form-inputs">
-                <input type="text" placeholder="    Enter your full name" style="width: 20rem; height: 2.5rem; border-radius: 0.75rem;"> <br> <br><br>
-                <input type="email" placeholder="    Enter your valid email" style="width: 20rem; height: 2.5rem; border-radius: 0.75rem;"> <br> <br> <br>
-                <textarea placeholder="    Enter your message" rows= "8" cols="42" style="border-radius: 0.75rem;"></textarea> <br> <br> <br>
-                <button type="button" class="btn btn-secondary">Submit</button>
+              <form id="contact-form" method="post">
+                <div class="input-group">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
               </form>
             </div>
           </div>
