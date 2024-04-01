@@ -1,60 +1,29 @@
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-  event.preventDefault();
-  
-  const name = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const message = document.getElementById('message').value.trim();
-
-  if (name === '' || email === '' || message === '') {
-    alert('Please fill in all fields.');
-    return;
-  }
-
-  if (!isValidEmail(email)) {
-    alert('Please enter a valid email address.');
-    return;
-  }
-
-  // Form is valid, you can proceed with form submission logic here
-  const formData = new FormData(this);
-  for (const [key, value] of formData.entries()) {
-    console.log(`${key}: ${value}`);
-  }
-  this.reset(); // Reset the form after submission
-});
-
-function isValidEmail(email) {
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return emailRegex.test(email);
-}
-
 document.addEventListener("DOMContentLoaded", function () {
   const testimonials = [
     {
       id: 1,
-      name: "Khanyisile",
-      image: "boy.jpg", 
+      product: "Sneaker",
+      name: "Khanyisile Mdleleni",
+      image: "images/sneaker1.jpg",
       stars: 5,
-      comment:
-        "Outstanding service and creativity from Ace of Digital for my business cards. Highly recommend their expertise.",
+      comment: "These sneakers are so comfortable and stylish. Highly recommended!",
     },
     {
-      id: 1,
-      name: "Khanyisile",
-      image: "boy.jpg", 
-      stars: 5,
-      comment:
-        "Outstanding service and creativity from Ace of Digital for my business cards. Highly recommend their expertise.",
+      id: 2,
+      product: "iPhone",
+      name: "Amanda Khalela",
+      image: "images/iphone1.jpg",
+      stars: 4,
+      comment: "The iPhone has exceeded my expectations. Great features and design.",
     },
     {
-      id: 1,
-      name: "Khanyisile",
-      image: "boy.jpg", 
-      stars: 5,
-      comment:
-        "Outstanding service and creativity from Ace of Digital for my business cards. Highly recommend their expertise.",
+      id: 3,
+      product: "Sneaker",
+      name: "Onelisiwe Tshwane",
+      image: "images/sneaker2.jpg",
+      stars: 4,
+      comment: "I love the unique design of these sneakers. They make me stand out in the crowd.",
     },
-   
   ];
 
   const testimonialsContainer = document.getElementById("testimonialsContainer");
@@ -65,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     testimonialElem.innerHTML = `
       <div class="testimonial-image">
-        <img src="${testimonial.image}" alt="Client">
+        <img src="${testimonial.image}" alt="${testimonial.product}">
       </div>
       <div class="testimonial-details">
         <div class="testimonial-header">
@@ -79,6 +48,3 @@ document.addEventListener("DOMContentLoaded", function () {
     testimonialsContainer.appendChild(testimonialElem);
   });
 });
-
-
-
