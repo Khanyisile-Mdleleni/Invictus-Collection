@@ -3,10 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 1,
       product: "Sneaker",
-      name: "Khanyisile Mdleleni",
+      name: "Masego Matilda Sejoe ",
       image: "images/sneaker1.jpg",
       stars: 5,
-      comment: "These sneakers are so comfortable and stylish. Highly recommended!",
+      comment:
+        "The owner always communicates patiently & kindly to buyers as to when they will receiver their orders.",
     },
     {
       id: 2,
@@ -14,7 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
       name: "Amanda Khalela",
       image: "images/iphone1.jpg",
       stars: 4,
-      comment: "The iPhone has exceeded my expectations. Great features and design.",
+      comment:
+        "The iPhone has exceeded my expectations. Great features and design.",
     },
     {
       id: 3,
@@ -22,13 +24,16 @@ document.addEventListener("DOMContentLoaded", function () {
       name: "Onelisiwe Tshwane",
       image: "images/sneaker2.jpg",
       stars: 4,
-      comment: "I love the unique design of these sneakers. They make me stand out in the crowd.",
+      comment:
+        "I love the unique design of these sneakers. Best quality in affordable price.",
     },
   ];
 
-  const testimonialsContainer = document.getElementById("testimonialsContainer");
+  const testimonialsContainer = document.getElementById(
+    "testimonialsContainer"
+  );
 
-  testimonials.forEach(testimonial => {
+  testimonials.forEach((testimonial) => {
     const testimonialElem = document.createElement("div");
     testimonialElem.classList.add("testimonial");
 
@@ -39,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <div class="testimonial-details">
         <div class="testimonial-header">
           <h3>${testimonial.name}</h3>
-          <div class="stars">${'&#9733;'.repeat(testimonial.stars)}</div>
+          <div class="stars">${"&#9733;".repeat(testimonial.stars)}</div>
         </div>
         <p class="comment">${testimonial.comment}</p>
       </div>
