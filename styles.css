@@ -204,6 +204,7 @@ nav ul li a {
 
 /* ---------------- Services ----------------------*/
 
+/* For desktop screens */
 .title {
     text-align: center;
     margin-top: 2.5rem;
@@ -217,42 +218,22 @@ nav ul li a {
 .services-container {
     padding: 0 100px 0 100px;
 }
+.content-box .finbyz-icon img {
+    width: 250px; 
+    height: 200px; 
+    object-fit: cover; 
+  }
 
-article {
-    display: flex;
-    height: 300px;
-    position: relative;
-    background: #fff;
-    box-shadow: 0px 0px 50px -10px #9a7289;
+.content-box {
+    padding: 20px; 
+  }
+  
+.col-md-4 {
+    margin-top: 20px; 
 }
 
-.section {
-    width: 100%;
-    overflow: hidden;
-    padding: 2% 5% 0;
-    position: relative;
-}
 
-.teaser {
-    display: flex;
-    margin: 0 0 3vw 0;
-    animation: move 20s forwards linear;
-}
 
-.teaser figure {
-    overflow: hidden;
-    margin: 0;
-    width: 250px;
-    min-width: 250px;
-    padding: 0 30px 0 0;
-    position: relative;
-}
-
-.teaser img {
-    width: 220px;
-    height: 180px;
-    object-fit: cover;
-}
 
 
 /* ---------------- Testimonials ----------------------*/
